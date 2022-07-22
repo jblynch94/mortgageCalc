@@ -1,0 +1,115 @@
+:root{
+    --jbl-primary-color:  rgb(66,148,186);
+    --jbl-secondary-color: rgb(255, 255, 255);
+    --jbl-dark-color:  rgb(27, 61, 77);
+    --jbl-light-color: #ffffff;
+    --jbl-highlight-color:  rgb(240, 142, 62);
+    --jbl-nav-toggler-glow: rgb(240, 142, 62);
+    }
+/* sticky footer setup */
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--jbl-primary-color);
+    color: white;
+}
+.content{
+    flex: 1 0 auto;
+    margin-top: 3rem;
+}
+/* sticky footer setup end */
+
+/* navbar override */
+
+#mainNav{
+    background: var(--jbl-dark-color);
+}
+#mainNav button{
+    border-color: var(--jbl-secondary-color);
+}
+.navbar-toggler-icon-jbl{
+    color: var(--jbl-secondary-color);
+}
+.navbar-toggler{
+    color: var(--jbl-nav-toggler-glow) !important;
+}
+.nav-item>a:hover{
+    color: var(--jbl-highlight-color);
+}
+.active{
+    color: var(--jbl-highlight-color) !important;
+}
+/* navbar overrides end */
+
+/* Bs button overrides */
+.btn-primary{
+    color: white !important;
+    background-color: var(--jbl-dark-color) !important;
+    border-color: var(--jbl-highlight-color) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+    filter:brightness(1.1) !important;
+    border-color: var(--jbl-primary-color) !important;
+}
+
+.brt-outline-primary{
+    color: var(--jbl-dark-color) !important;
+    border-color: var(--jbl-primary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.brt-outline-primary:active,
+.brt-outline-primary:focus{
+    color: white !important;
+    border-color: var(--jbl-secondary-color) !important;
+    background-color: var(--jbl-primary-color) !important;
+}
+
+
+/* bs button overrides end */
+
+.checklist{
+    list-style-type: none;
+}
+.checklist>li em{
+    color: var(--jbl-highlight-color);
+}
+.devicons {
+    font-size: 3.5rem;
+}
+.footer{
+    flex-shrink: 0;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: var(--jbl-dark-color);
+    color: var(--jbl-light-color)
+}
+.social{
+    font-size: 1rem;
+}
+.social>a{
+    color: var(--jbl-light-color);
+}
+.social>a:hover{
+    color: var(--jbl-highlight-color);
+}
+.icon{
+    width: 4.5rem;
+}
+u{
+    text-decoration: underline;
+    text-decoration-color: var(--jbl-highlight-color);
+    padding-left: .6rem;
+}
+.btn:hover{
+    color: var(--jbl-highlight-color);
+    border-color: var(--jbl-highlight-color);
+    background-color: transparent;
+}
