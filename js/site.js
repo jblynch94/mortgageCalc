@@ -9,17 +9,7 @@ function getData(){
 
     let data = createObj(amount, term, intRate);
 
-    if(amount < 0 || term < 0 || intRate < 0){
-        Swal.fire({
-            backdrop: false,
-            title: "oops!",
-            text: "Please enter positive numbers."
-           });
-    }else{
-        displayData(data,term);
-    }
-
-    
+    displayData(data,term);
 
 }
 
