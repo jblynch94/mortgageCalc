@@ -55,9 +55,59 @@
     <!-- Main -->
     <main class="content">
         <div class="container mt-5">
-            <h1>APP UI GOES HERE</h1>
-            <input type="text" id="message" placeholder="Enter a Message">
-            <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <form action="">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <label for="loanAmt">Loan Amount</label>
+                                <div class="col"><input type="number" id="loanAmt" value=""></div>
+                               
+                            </div>
+                            <div class="col">
+                                <label for="term">Term (Months)</label>
+                                <div class="col"><input type="number" id="term" value=""></div>
+                                
+                            </div>
+                            <div class="col">
+                                <label for="intRate">Interest Rate</label>
+                                <div class="col"><input type="number" id="intRate" value=""></div>
+                                
+                            </div>
+                            <a class="btn btn-primary mt-4" href="#" onclick="getData()">Calculate</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-8 order-first order-md-last">
+                    <div class="row row-cols-1 g-3">
+                        <div class="col text-center">Your Monthly Payments</div>
+                        <div class="col text-center" id="monthlyPayment"></div>
+                    </div>
+                    <div class="row row-cols-2 g-2 mt-4">
+                        <div class="col text-start">Total Principal</div>
+                        <div class="col text-end" id="totalPrincipal"></div>
+                        <div class="col text-start ">Total Interest</div>
+                        <div class="col text-end" id="totalInterest"></div>
+                        <div class="col text-start ">Total Cost</div>
+                        <div class="col text-end" id="totalCost"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Month</th>
+                        <th>Payment</th>
+                        <th>Principal</th>
+                        <th>Interest</th>
+                        <th>Total Interest</th>
+                        <th>Balance</th>
+                    </tr>
+                    <tbody id="infoBody">
+                        <!-- data goes here -->
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
     <!-- Footer -->
@@ -81,12 +131,25 @@
             </div>
         </div>
     </div>
+
+    <!-- template section -->
+    <template id="data-template">
+        <tr>
+            <td data-id="month"></td>
+            <td data-id="payment"></td>
+            <td data-id="principal"></td>
+            <td data-id="interest"></td>
+            <td data-id="totalInterest"></td>
+            <td data-id="balance"></td>
+        </tr>
+    </template>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById("btnSubmit").addEventListener("click",getValue2);
+       
     </script>
 </body>
 </html>
