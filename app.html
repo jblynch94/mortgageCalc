@@ -61,17 +61,17 @@
                         <div class="row row-cols-1">
                             <div class="col">
                                 <label for="loanAmt">Loan Amount</label>
-                                <div class="col"><input type="number" id="loanAmt" value=""></div>
+                                <div class="col"><input type="number" min="0" id="loanAmt" value=""></div>
                                
                             </div>
                             <div class="col">
                                 <label for="term">Term (Months)</label>
-                                <div class="col"><input type="number" id="term" value=""></div>
+                                <div class="col"><input type="number" min="0" id="term" value=""></div>
                                 
                             </div>
                             <div class="col">
                                 <label for="intRate">Interest Rate</label>
-                                <div class="col"><input type="number" id="intRate" value=""></div>
+                                <div class="col"><input type="number" min="0" id="intRate" value=""></div>
                                 
                             </div>
                             <a class="btn btn-primary mt-4" href="#" onclick="getData()">Calculate</a>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="table-responsive">
                 <table class="table table-striped">
                     <tr>
                         <th>Month</th>
