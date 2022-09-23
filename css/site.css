@@ -1,10 +1,10 @@
 :root{
-    --jbl-primary-color:  rgb(66,148,186);
+    --jbl-primary-color:  rgb(167, 167, 167);
     --jbl-secondary-color: rgb(255, 255, 255);
     --jbl-dark-color:  rgb(27, 61, 77);
     --jbl-light-color: #ffffff;
-    --jbl-highlight-color:  rgb(240, 142, 62);
-    --jbl-nav-toggler-glow: rgb(240, 142, 62);
+    --jbl-highlight-color:  #bb4430;
+    --jbl-nav-toggler-glow: #bb4430;
     }
 /* sticky footer setup */
 html,body{
@@ -113,3 +113,13 @@ u{
     border-color: var(--jbl-highlight-color);
     background-color: transparent;
 }
+.logo{
+    border: solid;
+    border-radius: 15px;
+    border-color: var(--jbl-primary-color);     
+ }
+ .brand{
+     background-color: rgba(35, 31, 32, 1);
+ }
+ 
+ 
